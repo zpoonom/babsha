@@ -7,7 +7,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 2 | Starter</title>
+  <title>Add New products | babsha</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
@@ -23,6 +23,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         apply the skin class to the body tag so the changes take effect.
       -->
       <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
+      <link rel="stylesheet" type="text/css" href="babsha-style.css">
 
       <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -280,8 +281,8 @@ desired effect
       <!-- Content Header (Page header) -->
       <section class="content-header">
         <h1>
-          Page Header
-          <small>Optional description</small>
+          Add New Products
+          <small></small>
         </h1>
         <ol class="breadcrumb">
           <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
@@ -291,11 +292,131 @@ desired effect
 
       <!-- Main content -->
       <section class="content container-fluid">
+      <div class="box box-primary">
+      <br>
+      <div class="row">
+      <div class="col-md-8">
 
-        <!--------------------------
-          | Your Page Content Here |
-          -------------------------->
 
+      <div class="row">
+      <div align="center" class="col-md-4">
+        <label>Product For</label><br>
+
+      </div>
+      <div class="col-md-8">
+        <select class="form-control blank">
+                    <option>Trino lab</option>
+                    <option>Optimus prime</option>
+                    <option>Srigal</option>
+                    <option>Dokan</option>
+                    <option>VOR</option>
+                  </select>
+      </div>
+       </div>
+       <br>
+
+       <div class="row">
+       <div align="center" class="col-md-4">
+       <label>Product Title</label></div>
+
+       <div class="col-md-8">
+       <input class="blank" type="text" name=""></div>
+       </div>
+       <br>
+
+       <div class="row">
+       <div align="center" class="col-md-4">
+       <label>Image Upload</label></div>
+       <div class="col-md-8" >
+         <label>Select Image</label>
+         <input  type="file" name="file" id="file">
+         <button type="button" class="btn bg-olive margin">Upload</button>
+       </div>
+
+
+       </div><br>
+
+       <div class="row">
+       <div align="center" class="col-md-4">
+         <label>Short Description</label>
+       </div>
+       <div class="col-md-8">
+         <input class="blank" type="text" name="">
+       </div>
+       </div><br>
+
+        <div class="row">
+       <div align="center" class="col-md-4">
+         <label>Long Description</label>
+       </div>
+       <div class="col-md-8">
+         <textarea class="blank" ></textarea>
+       </div>
+       </div><br>
+
+
+       <div class="row">
+       <div align="center" class="col-md-4">
+       <label>Price</label></div>
+
+       <div class="col-md-8">
+       <input class="blank" type="text" name=""></div>
+       </div>
+       <br>
+
+       <div class="row">
+      <div align="center" class="col-md-4">
+        <label>Category</label><br>
+
+      </div>
+      <div class="col-md-8">
+        <select class="form-control blank">
+                    <option>Shoe</option>
+                    <option>No</option>
+                    
+                  </select>
+      </div>
+       </div>
+       <br>
+
+       <div class="row">
+      <div align="center" class="col-md-4">
+        <label>Featured</label><br>
+
+      </div>
+      <div class="col-md-8">
+        <select class="form-control blank">
+                    <option>YES</option>
+                    <option>NO</option>
+                    >
+                  </select>
+      </div>
+       </div>
+       <br>
+
+      
+
+        <div class="row">
+       <div align="center" class="col-md-4">
+       <label>Create WooCommerce Product</label></div>
+
+       <div class="col-md-8">
+       <label>
+       <input id="postWp" type="checkbox"> Yes</label>
+       </div>
+       <br>
+
+       <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-8">
+        <button type="button" class="btn bg-orange margin">+ Add Product</button>
+      </div>
+      </div>
+
+       <div class="col-md-4">
+       </div>
+        </div>
+        </div>
       </section>
       <!-- /.content -->
     </div>
