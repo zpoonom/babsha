@@ -7,7 +7,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Order-history | Babsha</title>
+  <title>Bot | Babsha</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
@@ -25,6 +25,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
       <link rel="stylesheet" type="text/css" href="babsha-style.css">
       <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+
 
       <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -272,6 +273,7 @@ desired effect
             </ul>
           </li>
         </ul>
+
         <!-- /.sidebar-menu -->
       </section>
       <!-- /.sidebar -->
@@ -282,7 +284,7 @@ desired effect
       <!-- Content Header (Page header) -->
       <section class="content-header">
         <h1>
-          Order history
+         Bot auto replies
           <small></small>
         </h1>
         <ol class="breadcrumb">
@@ -293,9 +295,68 @@ desired effect
 
       <!-- Main content -->
       <section class="content container-fluid">
+      <div class="box box-primary">
       <br><br>
 
-        <div>
+      <div class="row">
+      <div class="col-md-6">
+
+      <div class="row">
+        <div align="center" class="col-md-4">
+          <label>Select page</label><br>
+        </div>
+        <div class="col-md-8">
+          <select class="form-control ">
+                    <option>Trino lab</option>
+                    <option>Optimus prime</option>
+                    <option>Srigal</option>
+                    <option>Dokan</option>
+                    <option>VOR</option>
+                  </select><br>
+        </div>
+        </div>
+
+        <div class="row">
+        <div align="center" class="col-md-4">
+          <label>Message</label>
+        </div>
+        <div class="col-md-8">
+          <input type="text" class="form-control" placeholder="Enter ..."><br>
+        </div>
+        </div>
+
+        <div class="row">
+        <div align="center" class="col-md-4">
+        
+          <label>Reply</label>
+        </div>
+        <div class="col-md-8">
+        
+          <input type="text" class="form-control" placeholder="Enter ...">
+        </div>
+        </div>
+
+        <div class="row">
+        <div align="center" class="col-md-4"></div>
+        
+        
+     
+        <div class="col-md-8">
+        <br>
+          <button type="button" class="btn bg-olive"><i class="fa fa-plus"></i> Add Product</button>
+
+        </div>
+        </div>
+        <br><br><br>
+
+
+
+      </div>
+      <div class="col-md-6"></div>
+      </div>
+      
+
+      <div>
       
       
 
@@ -304,10 +365,8 @@ desired effect
         <thead>
             <tr>
                 
-                <th>Order</th>
-                <th>Purchased</th>
-                <th>Status</th>
-                <th>Payment</th>
+                <th>Message</th>
+                <th>Reply</th>
                 <th>Action</th>
                 
                 
@@ -316,43 +375,44 @@ desired effect
         <tfoot>
             <tr>
                
-                <th>Order</th>
-                <th>Purchased</th>
-                <th>Status</th>
-                <th>Payment</th>
+                <th>Message</th>
+                <th>Reply</th>
                 <th>Action</th>
             </tr>
         </tfoot>
         <tbody>
             <tr>
                 
-                <td>a</td>
-                <td>b</td>
-                <td>c</td>
-                <td>d</td>
-                <td>e</td>
- 
+                <td>Product details</td>
+                <td>Which one?</td>
+                <td><div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+  <button type="button" class="btn btn-danger "><i class="fa fa-trash"></i>  Delete</button>
+  <button type="button" class="btn btn-primary "><i class="fa fa-edit"></i> Edit</button></div>
+  </td>
                
             </tr>
 
             <tr>
                 
-                <td>a</td>
-                <td>b</td>
-                <td>c</td>
-                <td>d</td>
-                <td>e</td>
-                 
-  
+                <td>Hi</td>
+                <td>Hello!</td>
+                <td><div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+  <button type="button" class="btn btn-danger "><i class="fa fa-trash"></i>  Delete</button>
+  <button type="button" class="btn btn-primary "><i class="fa fa-edit"></i> Edit</button></div>
+  </td>
                
             </tr>
                     </tbody>
     </table>
     </div>
-      </div>
+    
+    </div>
+    </div>
 
-         </section>
-      <!-- /.content -->
+
+       
+       </section>
+      
     </div>
     <!-- /.content-wrapper -->
 
@@ -465,11 +525,9 @@ desired effect
 <script src="http://cdn.datatables.net/buttons/1.2.1/js/buttons.print.min.js"></script>
 <script src="https://cdn.datatables.net/responsive/2.1.0/js/dataTables.responsive.min.js"></script>
 
-
 <script>
 
-   
- $(document).ready(function () {
+  $(document).ready(function () {
 
 
         var table = $('#mytable').DataTable({
@@ -498,6 +556,8 @@ desired effect
 
 
     });
+
+
 
 
 

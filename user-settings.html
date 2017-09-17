@@ -7,7 +7,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Order-history | Babsha</title>
+  <title>Settings | Babsha</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
@@ -24,7 +24,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
       -->
       <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
       <link rel="stylesheet" type="text/css" href="babsha-style.css">
-      <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
 
       <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -282,7 +281,7 @@ desired effect
       <!-- Content Header (Page header) -->
       <section class="content-header">
         <h1>
-          Order history
+          Update Shop settings
           <small></small>
         </h1>
         <ol class="breadcrumb">
@@ -293,65 +292,224 @@ desired effect
 
       <!-- Main content -->
       <section class="content container-fluid">
-      <br><br>
 
-        <div>
+        <div class="box box-primary">
+      <br>
+      <div class="row">
+      <div class="col-md-8">
+
+       <div class="row">
+       <div align="center" class="col-md-4">
+         <label></label>
+       </div>
+       <div class="col-md-8">
+        <button type="button" class="btn btn-primary btn-flat">Connect with Facebook</button>
+       </div>
+       </div><br>
+
+
+      <div class="row">
+      <div align="center" class="col-md-4">
+        <label>Facebook Pagesr</label><br>
+
+      </div>
+      <div class="col-md-8">
+        <select class="form-control blank">
+                    <option>Trino lab</option>
+                    <option>Optimus prime</option>
+                    <option>Srigal</option>
+                    <option>Dokan</option>
+                    <option>VOR</option>
+                  </select>
+      </div>
+       </div>
+       <br>
+
+       <div class="row">
+       <div align="center" class="col-md-4">
+       <label>Shop Title</label></div>
+
+       <div class="col-md-8">
+       <input type="text" class="form-control blank" placeholder="Shop title ..."></div>
+       </div>
+       <br>
+
+      <div class="row">
+       <div align="center" class="col-md-4">
+       <label>Shop Sub Title</label></div>
+
+       <div class="col-md-8">
+       <input type="text" class="form-control blank" placeholder="Buy in affordable price..."></div>
+       </div>
+       <br>
+
+       <div class="row">
+       <div align="center" class="col-md-4">
+         <label>Phone</label>
+       </div>
+       <div class="col-md-8">
+         <input type="text" class="form-control blank" placeholder="Enter ...">
+       </div>
+       </div><br>
+
+       <div class="row">
+       <div align="center" class="col-md-4">
+         <label>Email</label>
+       </div>
+       <div class="col-md-8">
+         <input type="text" class="form-control blank" placeholder="Enter ...">
+       </div>
+       </div><br>
+
+
+       <div class="row">
+       <div align="center" class="col-md-4">
+       <label>Address</label></div>
+
+       <div class="col-md-8">
+       <input type="text" class="form-control blank" placeholder="Enter ..."></div>
+       </div>
+       <br>
+
+      <div class="row">
+       <div align="center" class="col-md-4">
+         <label>After order message</label>
+       </div>
+       <div class="col-md-8">
+         <input type="text" class="form-control blank" placeholder="Enter ...">
+       </div>
+       </div><br>
+
+     <div class="row">
+       <div align="center" class="col-md-4">
+         <label>Map data</label>
+       </div>
+       <div class="col-md-8">
+         <input type="text" class="form-control blank" placeholder="Enter ...">
+       </div>
+       </div><br>
+
+       <div class="row">
+       <div align="center" class="col-md-4">
+         <label>Phone</label>
+       </div>
+       <div class="col-md-8" >
+         <label>Select Image</label>
+         <input  type="file" name="file" id="file">
+         <button type="button" class="btn bg-olive margin">Upload</button>
+       </div>
+       </div><br>
+
+
+       <div class="row">
+       <div align="center" class="col-md-4">
+         <label>Currency</label>
+       </div>
+       <div class="col-md-8">
+        <select class="form-control blank">
+                    <option>BDT</option>
+                    <option>USD</option>
+                    <option>EURO</option>
+                    <option>GBP</option>
+                  
+                  </select>
+      </div>
+       </div>
+       <br>
+
+       <div class="row">
+       <div align="center" class="col-md-4">
+         <label>Tax</label>
+       </div>
+       <div class="col-md-8">
+         <input type="text" class="form-control blank" placeholder="Enter ...">
+       </div>
+       </div><br>
+
+       <div class="row">
+       <div align="center" class="col-md-4">
+         <label>Shipping cost</label>
+       </div>
+       <div class="col-md-8">
+         <input type="text" class="form-control blank" placeholder="Enter ...">
+       </div>
+       </div><br>
+
+        <div class="row">
+       <div align="center" class="col-md-4">
+         <label>Payment Method</label>
+       </div>
+       <div class="col-md-8">
+        <select class="form-control blank">
+                    <option>PayPal</option>
+                    
+                  </select>
+      </div>
+       </div>
+       <br>
+
+        <div class="row">
+       <div align="center" class="col-md-4">
+         <label>PayPal client ID</label>
+       </div>
+       <div class="col-md-8">
+         <input type="text" class="form-control blank" placeholder="Enter ...">
+       </div>
+       </div><br>
+
+        <div class="row">
+       <div align="center" class="col-md-4">
+         <label>PayPal Client Secret</label>
+       </div>
+       <div class="col-md-8">
+         <input type="text" class="form-control blank" placeholder="Enter ...">
+       </div>
+       </div><br>
+
+        <div class="row">
+       <div align="center" class="col-md-4">
+         <label>WordPress URL</label>
+       </div>
+       <div class="col-md-8">
+         <input type="text" class="form-control blank" placeholder="Enter ...">
+       </div>
+       </div><br>
+
+        <div class="row">
+       <div align="center" class="col-md-4">
+         <label>WooCommerce Consumer Key</label>
+       </div>
+       <div class="col-md-8">
+         <input type="text" class="form-control blank" placeholder="Enter ...">
+       </div>
+       </div><br>
+
+         <div class="row">
+       <div align="center" class="col-md-4">
+         <label>WooCommerce Secret</label>
+       </div>
+       <div class="col-md-8">
+         <input type="text" class="form-control blank" placeholder="Enter ...">
+       </div>
+       </div><br>
+
       
-      
 
 
-      <table id="mytable" class="display" cellspacing="0" width="100%">
-        <thead>
-            <tr>
-                
-                <th>Order</th>
-                <th>Purchased</th>
-                <th>Status</th>
-                <th>Payment</th>
-                <th>Action</th>
-                
-                
-            </tr>
-        </thead>
-        <tfoot>
-            <tr>
-               
-                <th>Order</th>
-                <th>Purchased</th>
-                <th>Status</th>
-                <th>Payment</th>
-                <th>Action</th>
-            </tr>
-        </tfoot>
-        <tbody>
-            <tr>
-                
-                <td>a</td>
-                <td>b</td>
-                <td>c</td>
-                <td>d</td>
-                <td>e</td>
- 
-               
-            </tr>
-
-            <tr>
-                
-                <td>a</td>
-                <td>b</td>
-                <td>c</td>
-                <td>d</td>
-                <td>e</td>
-                 
-  
-               
-            </tr>
-                    </tbody>
-    </table>
-    </div>
+      <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-8">
+        <button type="button" class="btn bg-orange"><i class="fa fa-save space"></i>Update</button>
       </div>
 
-         </section>
+      </div><br>
+
+       <div class="col-md-4">
+       </div>
+        </div>
+        </div>
+
+      </section>
       <!-- /.content -->
     </div>
     <!-- /.content-wrapper -->
@@ -453,55 +611,6 @@ desired effect
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <!-- AdminLTE App -->
 <script src="dist/js/adminlte.min.js"></script>
-<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/1.2.1/js/dataTables.buttons.min.js"></script>
-<script src="http://cdn.datatables.net/buttons/1.2.1/js/buttons.flash.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
-<script src="https://unpkg.com/flatpickr"></script>
-<script src="http://beirutin.com/esocial/public/opt/pdfmake.min.js"></script>
-<script src="http://beirutin.com/esocial/public/opt/vfs_fonts.js"></script>
-<script src="http://cdn.datatables.net/buttons/1.2.1/js/buttons.html5.min.js"></script>
-<script src="http://cdn.datatables.net/buttons/1.2.1/js/buttons.print.min.js"></script>
-<script src="https://cdn.datatables.net/responsive/2.1.0/js/dataTables.responsive.min.js"></script>
-
-
-<script>
-
-   
- $(document).ready(function () {
-
-
-        var table = $('#mytable').DataTable({
-            responsive: true,
-
-            dom: '<""flB>tip',
-            buttons: [
-                {
-                    extend: 'excel',
-                    text: '<button class="btn btn-success btn-xs space"><i class="fa fa-file-excel-o"></i> Export all to excel</button>'
-                },
-                {
-                    extend: 'csv',
-                    text: '<button class="btn btn-warning btn-xs space"><i class="fa fa-file-o"></i> Export all to csv</button>'
-                },
-                {
-                    extend: 'pdf',
-                    text: '<button class="btn btn-danger btn-xs space"><i class="fa fa-file-pdf-o"></i> Export all to pdf</button>'
-                },
-                {
-                    extend: 'print',
-                    text: '<button class="btn bg-navy btn-xs space"><i class="fa fa-print"></i> Print all</button>'
-                },
-            ]
-        });
-
-
-    });
-
-
-
-</script>
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
      Both of these plugins are recommended to enhance the
