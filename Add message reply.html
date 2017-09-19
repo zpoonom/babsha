@@ -7,7 +7,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Add short code | Babsha</title>
+  <title>Add new | Babsha</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
@@ -24,8 +24,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
       -->
       <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
       <link rel="stylesheet" type="text/css" href="babsha-style.css">
-      <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
-
 
       <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -283,7 +281,7 @@ desired effect
       <!-- Content Header (Page header) -->
       <section class="content-header">
         <h1>
-          Add short code
+          
           <small></small>
         </h1>
         <ol class="breadcrumb">
@@ -294,115 +292,148 @@ desired effect
 
       <!-- Main content -->
       <section class="content container-fluid">
-      <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
 
-      <div class="box box-primary">
-      <br>
-      <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-
-        <div class="row"><br>
-        <div align="right" class="col-md-2">
-
-        <label>Code</label></div>
-        <div class="col-md-10">
-          <input type="text" class="form-control" placeholder="Enter ...">
-        </div>
-        </div>
-      
-<br>
-      <div class="row">
-        <div align="right" class="col-md-2">
-        <label>Content</label></div>
-        <div class="col-md-10">
-          <input type="text" class="form-control" placeholder="Enter ...">
-        </div>
-        </div>
-
-<br>
        <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-10">
-          <button type="button" class="btn bg-olive"><i class="fa fa-plus"></i> Add Shortcode</button>
-        </div>
-        </div>
-<br><br>
 
-<div class="box box-primary">
-<div><h4>Available Short Codes</h4>
-<br><br>
-        
-        
-      <table id="mytable" class="display" cellspacing="0" width="100%">
-        <thead>
-            <tr>
-                
-                <th>ID</th>
-                <th>Code</th>
-                <th>Value</th>
-                <th>Action</th>
-                
-               
-                
-                
-            </tr>
-        </thead>
-        <tfoot>
-            <tr>
-                <th>ID</th>
-                <th>Code</th>
-                <th>Value</th>
-                <th>Action</th>
-                
-            </tr>
-        </tfoot>
-        <tbody>
-            <tr>
-                
-                <td><span class="badge bg-olive">System</span></td>
-                <td>{{sender}}</td>
-                <td>Sender name who belongs to the message or comments.</td>
-                <td>no</td>
-                
-                </tr>
+       <div class="col-md-4">
+       <div class="box box-primary">
+       
+       <h5 class="margin"><i class="fa fa-pie-chart"></i>Preview</h5>
+       <div class="row">
+       <div class="col-md-1"></div>
+       <div class="col-md-10">
+         <ul class="list-group">
+          <li class="list-group-item">
+         
+          </li>
+          
+         </ul>
+       </div>
+       <div class="col-md-1"></div>
+       </div>
 
-            <tr>
-                
-                <td><span class="badge bg-olive">System</span></td>
-                <td>{{page_name}}</td>
-                <td>Page name belongs to the message or comments.</td>
-                <td>no</td>
-                
-               
-                 
-  
-               
-            </tr>
-                 <tr>
-                   <td><span class="badge bg-olive">System</span></td>
-                   <td>{{message}}</td>
-                   <td>message or comments of sender</td>
-                   <td>no</td>
-                  
-                 </tr>
-                    </tbody>
-    </table>
-  
-      </div>
+       </div>
+         
+       </div>
 
-</div>
-      
 
-      <div class="col-md-1"></div>
-      </div>
-      </div>
-      </div>
 
-      <div class="col-md-1"></div>
-      </div>
+       <div class="col-md-8">
+         
+         <div class="box box-primary">
+         <div>
+         <h4 class="margin">Add new reply for comments</h4>
+         <br></div>
+
+
+         <div class="row">
+           <div align="right" class="col-md-4">
+             <label>For</label>
+           </div>
+           <div class="col-md-8">
+             <select class="form-control blank">
+               <option>Trino lab</option>
+               <option>Srigal</option>
+               <option>Dokan</option>
+               <option>Vor</option>
+               <option>Optimus prime beta</option>
+             </select>
+           </div>
+         </div>
+
+<br>
+
+
+      <div class="row">
+           <div align="right" class="col-md-4">
+             <label>Question</label>
+           </div>
+           <div class="col-md-8">
+           <input type="text" class="form-control blank" placeholder="Write your comment ...">
+             
+           </div>
+           </div>
+
+<br>
+
+      <div class="row">
+           <div align="right" class="col-md-4">
+             <label>reply</label>
+           </div>
+           <div class="col-md-8">
+           <textarea class="form-control blank" placeholder="Type your reply ..."></textarea>
+             
+           </div>
+           </div>
+
+<br>
+
+      <div class="row">
+           <div align="right" class="col-md-4">
+             <label>Image link</label>
+           </div>
+           <div class="col-md-8">
+           <input type="text" class="form-control blank" placeholder="Image link">
+             
+           </div>
+           </div>
+<br>
+
+      <div class="row">
+           <div align="right" class="col-md-4">
+             <label>Video link</label>
+           </div>
+           <div class="col-md-8">
+           <input type="text" class="form-control blank" placeholder="Video link">
+             
+           </div>
+           </div>
+
+  <br>
+
+      <div class="row">
+           <div align="right" class="col-md-4">
+             <label>Audio link</label>
+           </div>
+           <div class="col-md-8">
+           <input type="text" class="form-control blank" placeholder="Audio link">
+             
+           </div>
+           </div>  
+           
+ <br>
+
+      <div class="row">
+           <div align="right" class="col-md-4">
+             <label>File link</label>
+           </div>
+           <div class="col-md-8">
+           <input type="text" class="form-control blank" placeholder="File link">
+             
+           </div>
+           </div>                 
+
+
+<br>  
+
+     
+      <div class="row">
+           <div align="right" class="col-md-4"></div>
+             
+       
+           <div class="col-md-8">
+             
+            <button type="button" class="btn btn-primary"><i class="fa fa-envelope"></i>Add Conversation</button>
+           </div>
+         </div>
+ <br>         
+
+
+
+
+         </div>
+       </div>
+       </div>
 
       </section>
       <!-- /.content -->
@@ -506,55 +537,6 @@ desired effect
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <!-- AdminLTE App -->
 <script src="dist/js/adminlte.min.js"></script>
-<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/1.2.1/js/dataTables.buttons.min.js"></script>
-<script src="http://cdn.datatables.net/buttons/1.2.1/js/buttons.flash.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
-<script src="https://unpkg.com/flatpickr"></script>
-<script src="http://beirutin.com/esocial/public/opt/pdfmake.min.js"></script>
-<script src="http://beirutin.com/esocial/public/opt/vfs_fonts.js"></script>
-<script src="http://cdn.datatables.net/buttons/1.2.1/js/buttons.html5.min.js"></script>
-<script src="http://cdn.datatables.net/buttons/1.2.1/js/buttons.print.min.js"></script>
-<script src="https://cdn.datatables.net/responsive/2.1.0/js/dataTables.responsive.min.js"></script>
-
-<script>
-
-   
- $(document).ready(function () {
-
-
-        var table = $('#mytable').DataTable({
-            responsive: true,
-
-            dom: '<""flB>tip',
-            buttons: [
-                {
-                    extend: 'excel',
-                    text: '<button class="btn btn-success btn-xs space"><i class="fa fa-file-excel-o"></i> Export all to excel</button>'
-                },
-                {
-                    extend: 'csv',
-                    text: '<button class="btn btn-warning btn-xs space"><i class="fa fa-file-o"></i> Export all to csv</button>'
-                },
-                {
-                    extend: 'pdf',
-                    text: '<button class="btn btn-danger btn-xs space"><i class="fa fa-file-pdf-o"></i> Export all to pdf</button>'
-                },
-                {
-                    extend: 'print',
-                    text: '<button class="btn bg-navy btn-xs space"><i class="fa fa-print"></i> Print all</button>'
-                },
-            ]
-        });
-
-
-    });
-
-
-
-</script>
-
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
      Both of these plugins are recommended to enhance the

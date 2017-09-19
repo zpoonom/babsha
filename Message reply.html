@@ -7,7 +7,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Add short code | Babsha</title>
+  <title>List | babsha</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
@@ -283,8 +283,9 @@ desired effect
       <!-- Content Header (Page header) -->
       <section class="content-header">
         <h1>
-          Add short code
-          <small></small>
+         Message list <br>
+         <small></small>
+
         </h1>
         <ol class="breadcrumb">
           <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
@@ -294,55 +295,25 @@ desired effect
 
       <!-- Main content -->
       <section class="content container-fluid">
-      <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
 
-      <div class="box box-primary">
       <br>
-      <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-
-        <div class="row"><br>
-        <div align="right" class="col-md-2">
-
-        <label>Code</label></div>
-        <div class="col-md-10">
-          <input type="text" class="form-control" placeholder="Enter ...">
+        
+        <div class="box box-primary"><br>
+        <div class="margin"><button type="button" class="btn btn-primary btn-xs"><i class="fa fa-plus"></i> Add new Message reply</button>
         </div>
-        </div>
+     <br><br>
       
-<br>
-      <div class="row">
-        <div align="right" class="col-md-2">
-        <label>Content</label></div>
-        <div class="col-md-10">
-          <input type="text" class="form-control" placeholder="Enter ...">
-        </div>
-        </div>
+      
 
-<br>
-       <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-10">
-          <button type="button" class="btn bg-olive"><i class="fa fa-plus"></i> Add Shortcode</button>
-        </div>
-        </div>
-<br><br>
 
-<div class="box box-primary">
-<div><h4>Available Short Codes</h4>
-<br><br>
-        
-        
       <table id="mytable" class="display" cellspacing="0" width="100%">
         <thead>
             <tr>
                 
                 <th>ID</th>
-                <th>Code</th>
-                <th>Value</th>
+                <th>Question</th>
+                <th>Reply</th>
+                <th>For</th>
                 <th>Action</th>
                 
                
@@ -352,9 +323,11 @@ desired effect
         </thead>
         <tfoot>
             <tr>
+               
                 <th>ID</th>
-                <th>Code</th>
-                <th>Value</th>
+                <th>Question</th>
+                <th>Reply</th>
+                <th>For</th>
                 <th>Action</th>
                 
             </tr>
@@ -362,48 +335,41 @@ desired effect
         <tbody>
             <tr>
                 
-                <td><span class="badge bg-olive">System</span></td>
-                <td>{{sender}}</td>
-                <td>Sender name who belongs to the message or comments.</td>
-                <td>no</td>
+                <td>1</td>
+                <td>hi!</td>
+                <td>Hello</td>
+                <td>FB Virtual Assistant software</td>
+                <td>
+                  <div class="btn-group btn-group-xs" role="group" aria-label="Basic example">
+  <button type="button" class="btn btn-danger btn-xs "><i class="fa fa-trash"></i> Delete</button>
+  <button type="button" class="btn btn-primary btn-xs "><i class="fa fa-edit"></i>Edit</button>
+         </div>
+                </td>
                 
                 </tr>
 
             <tr>
                 
-                <td><span class="badge bg-olive">System</span></td>
-                <td>{{page_name}}</td>
-                <td>Page name belongs to the message or comments.</td>
-                <td>no</td>
+                <td>2</td>
+                <td>How much?</td>
+                <td>$300 only</td>
+                <td>FB Virtual Assistant software</td>
+                <td>
+                  <div class="btn-group btn-group-xs" role="group" aria-label="Basic example">
+  <button type="button" class="btn btn-danger btn-xs "><i class="fa fa-trash"></i> Delete</button>
+  <button type="button" class="btn btn-primary btn-xs "><i class="fa fa-edit"></i>Edit</button>
+         </div>
+                </td>
                 
                
                  
   
                
-            </tr>
-                 <tr>
-                   <td><span class="badge bg-olive">System</span></td>
-                   <td>{{message}}</td>
-                   <td>message or comments of sender</td>
-                   <td>no</td>
-                  
-                 </tr>
+           
                     </tbody>
     </table>
-  
+    </div>
       </div>
-
-</div>
-      
-
-      <div class="col-md-1"></div>
-      </div>
-      </div>
-      </div>
-
-      <div class="col-md-1"></div>
-      </div>
-
       </section>
       <!-- /.content -->
     </div>
@@ -554,7 +520,6 @@ desired effect
 
 
 </script>
-
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
      Both of these plugins are recommended to enhance the
